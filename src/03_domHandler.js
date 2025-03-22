@@ -1,0 +1,18 @@
+const todos = document.getElementById('todolist');
+
+export const domHandler = {
+
+  loadTasks(project) {
+    project.tasks.forEach(function(tasks)
+    {
+        const task = document.createElement('div');
+        task.innerHTML = `${tasks.title} \n ${tasks.dueDate}`;
+        todos.appendChild(task);
+    })
+  },
+    
+  loadToDo(project) {
+      todos.innerHTML = `Title: ${project.title}`
+      this.loadTasks(project);
+  },
+};
