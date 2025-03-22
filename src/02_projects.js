@@ -1,24 +1,26 @@
 import Task from './01_tasks.js';
 
-//an array of tasks
-let tasks = [];
 
-export const taskManager = {
+export class Project {
+  //construct new project
+  constructor(title) {
+    this.title = title;
+    this.tasks = [];
+  }
+  
   //return the array of tasks
   getTasks() {
-    return tasks;
-  },
+    return this.tasks;
+  }
 
   //add a tasks to the array
   addTask(title, description, dueDate) {
     const newTask = new Task(title, description, dueDate);
-    tasks.push(newTask);
-  },
+    this.tasks.push(newTask);
+  }
 
   //remove a task from the array
   removeTask(index) {
-    tasks.splice(index,1);
+    this.tasks.splice(index,1);
   }
 }
-
-

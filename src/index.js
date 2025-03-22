@@ -1,9 +1,20 @@
 import Task from './01_tasks.js';
-import { taskManager } from './02_taskManager.js';
+import { Project } from './02_projects.js';
+import {ProjectManager} from './05_projectManager.js';
 
 
-taskManager.addTask("Buy Groceries", "I need to buy eggs, bread, and milk", "2025-03-22");
-taskManager.addTask("Buy Groceries", "I need to buy eggs, bread, and milk", "2025-03-22");
-taskManager.addTask("Buy Groceries", "I need to buy eggs, bread, and milk", "2025-03-22");
+const project = new Project("homework");
+project.addTask("Get Groceries", "I need to get milk and break", "2025-03-22");
+project.addTask("Get Groceries", "I need to get milk and bread", "2025-03-22");
 
-console.log(taskManager.getTasks());
+const study = new Project("Exam Study");
+study.addTask("Binary Trees", "Study how to preorder and postorder traversal", "2025-03-23");
+
+project.removeTask(0);
+
+const allProjects = new ProjectManager();
+allProjects.addProject(project);
+allProjects.addProject(study);
+
+console.log(allProjects.getProjects());
+console.log(project);

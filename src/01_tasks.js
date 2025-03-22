@@ -7,17 +7,12 @@ export default class Task {
     this.title = title;
     this.description = description;
     this.dueDate = parseISO(dueDate);
+    this.dueDate = format(this.dueDate, 'PPP'); // example: Jan 1st, 2025
     this.completed = false;
   }
 
   //toggling when the user completes a task
   toggleComplete() {
-    this.completed = !this.completed;
+    this.completed = !this.completed
   }
-
-  //use this wheneve we are displaying the date formally
-  getFormattedDate() {
-    return format(this.dueDate, 'PPP'); // example: Jan 1st, 2025
-  }
-
 }
