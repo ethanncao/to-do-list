@@ -1,9 +1,10 @@
+import './styles.css';
 import Task from './01_tasks.js';
 import { Project } from './02_projects.js';
 import {ProjectManager} from './05_projectManager.js';
 import {domHandler} from './03_domHandler.js';
 
-
+/*
 const project = new Project("Daily Tasks");
 project.addTask("Get Groceries", "I need to get milk and break", "2025-03-22");
 project.addTask("Go to work", "I need to get milk and bread", "2025-03-22");
@@ -20,3 +21,4 @@ console.log(allProjects.getProjects());
 console.log(project);
 
 domHandler.loadToDo(project);
+*/

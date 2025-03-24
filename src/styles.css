@@ -1,0 +1,82 @@
+body {
+  overflow: hidden;
+  background-color: rgba(175, 238, 238, 0.589);
+}
+
+.content
+{
+  display: grid;
+  grid-template-columns: 20% 80%;
+  height: 98vh;
+
+  box-shadow: 5px 5px 12px rgb(105, 105, 105);
+  border-radius: 10px;
+}
+
+.sidebar
+{
+    padding: 20px;
+    padding-top: 35px;
+    background-color: rgba(240, 205, 205, 0.788);
+    box-shadow: -5px 5px 12px rgb(105, 105, 105);
+    border-radius: 5px 0px 0px 5px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+}
+
+.main-view 
+{
+  background-color: rgba(252, 227, 231, 0.781);
+  border-radius: 0px 5px 5px 0px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.my-projects, .team 
+{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+
+}
+
+/* DEFAULT FONT */
+button, div {
+}
+
+/* Add task button */
+.add-task 
+{
+  font-weight: bold;
+  color: rgb(199, 134, 134);
+  
+}
+
+/* Button images */
+img {
+  height: 25px;
+  width: 25px;
+}
+
+.button-div 
+{
+  display: flex;
+}
+

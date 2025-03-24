@@ -1,4 +1,4 @@
-const todos = document.getElementById('todolist');
+const todos = document.getElementById('content'); // 'content' was 'todolist' but we changed name in html file
 
 export const domHandler = {
 
@@ -15,4 +15,6 @@ export const domHandler = {
       todos.innerHTML = `Title: ${project.title}`
       this.loadTasks(project);
   },
+
+  
 };

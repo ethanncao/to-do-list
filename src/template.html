@@ -1,11 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="styles.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
 <body>
-  <div id="todolist"></div>
+  <div class="content">
+    <!-- We'll just create the sidebar in here because the sidebar will always be there (it never changes) -->
+    <div class="sidebar">
+      <div class="profile">
+        <div class="greeting">Hello, Fuhbot!</div>
+      </div>
+
+
+      <div class="functions">
+        <ul>
+          <div class="button-div">
+            <img src="./img/test.gif" alt="">
+            <button class="add-task"> Add Task</button>
+          </div>
+          
+          <div class="button-div">
+            <img src="./img/test.gif" alt="">
+            <button>Search</button>
+          </div>
+
+          <div class="button-div">
+            <img src="./img/test.gif" alt="">
+            <button>Inbox</button>
+          </div>
+
+          <div class="button-div">
+            <img src="./img/test.gif" alt="">
+            <button>Today</button>
+          </div>
+           
+          <div class="button-div">
+            <img src="./img/test.gif" alt="">
+            <button>Upcoming</button>
+          </div>
+          
+          <div class="button-div">
+            <img src="./img/test.gif" alt="">
+            <button>Filters & Labels</button>
+          </div>
+        </ul>
+      </div>
+      
+
+      <div class="my-projects">
+        <div class="projects-title"> My Projects </div>
+        <ul class="project-names">
+
+          <div class="button-div">
+            <img src="./img/test.gif" alt="">
+            <button>Fitness</button>
+          </div>
+
+          <div class="button-div">
+            <img src="./img/test.gif" alt="">
+            <button>Groceries</button>
+          </div>
+
+          <div class="button-div">
+            <img src="./img/test.gif" alt="">
+            <button>Appointments</button>
+          </div>
+          
+        </ul>
+      </div>
+
+      <div class="team">
+        <div class="team-title">Team</div>
+        <ul>
+
+          <div class="button-div">
+            <img src="./img/test.gif" alt="">
+            <button>New Brand</button>
+          </div>
+
+          <div class="button-div">
+            <img src="./img/test.gif" alt="">
+            <button>Meeting Agenda</button>
+          </div>
+
+          <div class="button-div">
+            <img src="./img/test.gif" alt="">
+            <button>Product Roadmap</button>
+          </div>
+
+          <div class="button-div">
+            <img src="./img/test.gif" alt="">
+            <button>Website Update</button>
+          </div>
+
+        </ul>
+      </div>
+    </div>
+   
+    
+    <!-- We will load stuff into the mainview through JS -->
+    <div class="main-view">
+      main stuffs
+    </div>
+  </div>
 </body>
 </html>
